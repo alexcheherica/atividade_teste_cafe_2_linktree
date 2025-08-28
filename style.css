@@ -140,78 +140,70 @@ table a{
 }
 
 
-@media screen and (max-width: 768px) {
-    
-    #cabecalho {
-        padding: 12px 0;
-    }
-    
-    #cabecalho p {
-        font-size: 16px;
-        margin-bottom: 12px;
-    }
-    
-    #menu_fixo ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #menu_fixo li {
-        margin: 4px 0;
-        width: 100%;
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 28px;
         text-align: center;
     }
-    
-    #menu_fixo a {
-        display: block;
-        padding: 12px 16px;
+
+    #cabecalho {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
     }
-    
-    #principal {
-        padding: 200px 16px 32px;
+
+    #cabecalho p {
+        padding-left: 0;
+        text-align: center;
     }
-    
-    #titulo {
-        font-size: 32px;
-        margin-bottom: 24px;
-    }
-    
-    
-    section {
-        margin-bottom: 32px;
-    }
-    
-    h2 {
-        font-size: 24px;
-        margin-bottom: 16px;
-    }
-    
-    p {
-        font-size: 15px;
-        line-height: 1.7;
-        margin-bottom: 16px;
-    }
-    
-    figure img {
+
+    #menu_fixo ul {
+        flex-direction: column;
         width: 100%;
         height: auto;
-        max-width: 100%;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        gap: 10px;
+        padding: 0;
     }
-    
-    /* Reorganização das seções */
+
+    #menu_fixo li {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: 18px;
+        text-align: justify;
+    }
+
+    /* Sessões em coluna no mobile */
     #sessao_1, #sessao_2, #sessao_3, #sessao_4 {
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 15px;
     }
-    
-    #sessao_1 p, #sessao_2 p, #sessao_3 p, #sessao_4 p {
-        order: 1; /* Texto primeiro */
+
+    h1, h2 {
+        font-size: 22px;
+        text-align: center;
     }
-    
-    #sessao_1 figure, #sessao_2 figure, #sessao_3 figure, #sessao_4 figure {
-        order: 2; /* Imagem depois */
+
+    table {
+        width: 100%;
+        font-size: 12px;
     }
+
+    th, td {
+        font-size: 12px;
+        padding: 6px;
+    }
+}
+
+
 
