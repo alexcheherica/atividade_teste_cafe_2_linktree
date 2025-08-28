@@ -31,6 +31,11 @@
     align-items: center;
     gap: 20px;
 }
+
+ul a{
+    color: transparent;
+}
+
 li{
     font-size: 24px;
     color: white;
@@ -105,8 +110,8 @@ table{
    border-collapse: collapse;
    font-size: 14px;
    background-color: #e6f3f9;
-
 }
+
 
 th{
     background-color: #e6f3f9;
@@ -120,7 +125,7 @@ td{
    vertical-align: top;
 
 }
-a{
-    color: #0073e6;
 
+table a{
+    color: #0073e6;
 }
