@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --color-principal: #005687;
+}
  
 #cabecalho{
     background-color: cornflowerblue;
@@ -26,6 +30,7 @@
 }
 li{
     font-size: 24px;
+    color: var(--color-principal);
    
 }
 #menu_fixo li {
@@ -36,5 +41,43 @@ li{
 }
  
 #menu_fixo li:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--color-principal);
+}
+
+#principal{
+    background-color: rgb(207, 173, 173);
+}
+
+img{
+    height: 500px;
+}
+
+p{
+    font-size: 24px;
+}
+
+h2{
+    padding: 10px 10px 10px 20px;
+    color: var(--color-principal);
+
+}
+
+
+
+
+
+#sessao_1{
+    background-color:rgb(189, 139, 235);
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    
+    gap: 50px;
+    padding: 30px;
+}
+
+#sessao_1 p{
+    place-content: center;
 }
