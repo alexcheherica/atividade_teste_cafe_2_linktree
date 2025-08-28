@@ -78,14 +78,31 @@ h2{
     padding: 30px;
 }
 
-table{
-   width: 70%;
-   margin: 20px 0;
-   border-collapse: collapse;
-   borde
-
-}
 
 #sessao_1 p{
     place-content: center;
+}
+
+table{
+   width: 70%;
+   border-collapse: collapse;
+   font-size: 14px;
+
+}
+
+th{
+    background-color: #e6f3f9;
+    color: #000;
+    text-align: left;
+    padding: 8px;
+}
+td{
+   border: 1px solid #ccc; 
+   padding: 8px;
+   vertical-align: top;
+
+}
+a{
+    color: #0073e6;
+
 }
