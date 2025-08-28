@@ -3,3 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+ 
+#cabecalho{
+    background-color: cornflowerblue;
+    height: 100px;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+#menu_fixo ul{
+    background-color: gainsboro;
+    height: 60px;
+    width: 700px;
+ 
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+li{
+    font-size: 24px;
+   
+}
+#menu_fixo li {
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    transition: border-color 0.3s;
+   
+}
+ 
+#menu_fixo li:hover {
+    border-bottom: 2px solid black;
+}
