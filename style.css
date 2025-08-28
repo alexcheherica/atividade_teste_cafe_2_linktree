@@ -9,7 +9,11 @@
 }
  
 #cabecalho{
-    background-color: cornflowerblue;
+    background: linear-gradient(
+  to top,
+  rgba(0, 86, 135, 1),   /* azul opaco */
+  rgba(0, 86, 135, 0)    /* azul transparente */
+);
     height: 100px;
  
     display: flex;
@@ -18,7 +22,6 @@
 }
  
 #menu_fixo ul{
-    background-color: gainsboro;
     height: 60px;
     width: 700px;
  
@@ -30,7 +33,7 @@
 }
 li{
     font-size: 24px;
-    color: var(--color-principal);
+    color: white;
    
 }
 #menu_fixo li {
@@ -41,12 +44,10 @@ li{
 }
  
 #menu_fixo li:hover {
-    border-bottom: 2px solid var(--color-principal);
+    border-bottom: 2px solid white;
 }
 
-#principal{
-    background-color: rgb(207, 173, 173);
-}
+
 
 img{
     height: 500px;
@@ -66,8 +67,7 @@ h2{
 
 
 
-#sessao_1{
-    background-color:rgb(189, 139, 235);
+#sessao_1, #sessao_3{
     text-align: left;
 
     display: grid;
@@ -79,9 +79,26 @@ h2{
 }
 
 
-#sessao_1 p{
+ p{
     place-content: center;
 }
+
+#sessao_2, #sessao_4{
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    
+    gap: 50px;
+    padding: 30px;
+}
+
+
+
+
+
+
 
 table{
    width: 70%;
