@@ -38,3 +38,11 @@ li{
 #menu_fixo li:hover {
     border-bottom: 2px solid black;
 }
+
+table{
+   width: 70%;
+   margin: 20px 0;
+   border-collapse: collapse;
+   borde
+
+}
